@@ -1,0 +1,19 @@
+/**
+ * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
+ * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
+ */
+@import 'uview-ui/theme.scss';
+
+// 页面颜色
+$page-color: #ffffff;
+
+// 主题颜色
+$type-primary: #eb5e2f;
+$type-general: #009688;
+$type-warning: #fca71b;
+
+@mixin vue-flex($alignItems: flex-start, $justifyContent: flex-start) {
+  display: flex;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+}
